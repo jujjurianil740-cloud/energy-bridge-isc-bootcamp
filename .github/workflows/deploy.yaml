@@ -20,9 +20,9 @@ jobs:
  runs-on: ubuntu-latest
  container:
  image: cognite/toolkit:0.8.191 # Make sure the toolkit version matches theversion in cdf.toml
- strategy:
-  matrix:
-    include:
+strategy:
+    matrix:
+      include:
  # Deploy to 'test' environment automatically, only on push to main
 branch
  - environment: ${{ inputs.environment != '' && inputs.environment ||'test' }} environment: ${{ matrix.environment }}
