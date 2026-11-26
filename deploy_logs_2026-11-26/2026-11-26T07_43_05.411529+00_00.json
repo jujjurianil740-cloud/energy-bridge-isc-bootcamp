@@ -1,0 +1,614 @@
+{
+  "url": "https://westeurope-1.cognitedata.com/api/v1/projects/cdf-bootcamp-23-test/models/views",
+  "method": "POST",
+  "requestBody": {
+    "items": [
+      {
+        "space": "sp_isc_organizational_foundation",
+        "externalId": "ProductHierarchy",
+        "version": "v1.0.0",
+        "name": "ProductHierarchy",
+        "description": "Product classification hierarchy interface for grouping materials and finished goods. Platform functions use this view; agents should use concrete types such as ProductFamily or ProductGroup.",
+        "properties": {
+          "sourceCreatedUser": {
+            "name": "Source Created User",
+            "description": "User that created this node in the source system.",
+            "container": {
+              "type": "container",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "ProductHierarchy"
+            },
+            "containerPropertyIdentifier": "sourceCreatedUser"
+          },
+          "sourceUpdatedUser": {
+            "name": "Source Updated User",
+            "description": "User that last updated this node in the source system.",
+            "container": {
+              "type": "container",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "ProductHierarchy"
+            },
+            "containerPropertyIdentifier": "sourceUpdatedUser"
+          },
+          "name": {
+            "name": "Name",
+            "description": "Human-readable name for this product hierarchy node.",
+            "container": {
+              "type": "container",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "ProductHierarchy"
+            },
+            "containerPropertyIdentifier": "name"
+          },
+          "description": {
+            "name": "Description",
+            "description": "Description of this product hierarchy node.",
+            "container": {
+              "type": "container",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "ProductHierarchy"
+            },
+            "containerPropertyIdentifier": "description"
+          },
+          "tags": {
+            "name": "Tags",
+            "description": "Text-based labels for generic use, limited to 1000.",
+            "container": {
+              "type": "container",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "ProductHierarchy"
+            },
+            "containerPropertyIdentifier": "tags"
+          },
+          "aliases": {
+            "name": "Aliases",
+            "description": "Alternative names for this product hierarchy node.",
+            "container": {
+              "type": "container",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "ProductHierarchy"
+            },
+            "containerPropertyIdentifier": "aliases"
+          },
+          "sourceId": {
+            "name": "Source ID",
+            "description": "Identifier from the upstream source system.",
+            "container": {
+              "type": "container",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "ProductHierarchy"
+            },
+            "containerPropertyIdentifier": "sourceId"
+          },
+          "sourceContext": {
+            "name": "Source context",
+            "description": "Source system or context for this node.",
+            "container": {
+              "type": "container",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "ProductHierarchy"
+            },
+            "containerPropertyIdentifier": "sourceContext"
+          },
+          "sourceCreatedTime": {
+            "name": "Source created time",
+            "description": "Timestamp when the node was created in the source system.",
+            "container": {
+              "type": "container",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "ProductHierarchy"
+            },
+            "containerPropertyIdentifier": "sourceCreatedTime"
+          },
+          "sourceUpdatedTime": {
+            "name": "Source updated time",
+            "description": "Timestamp when the node was last updated in the source system.",
+            "container": {
+              "type": "container",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "ProductHierarchy"
+            },
+            "containerPropertyIdentifier": "sourceUpdatedTime"
+          },
+          "parent": {
+            "name": "Parent",
+            "description": "The parent of this product hierarchy node in the classification tree.",
+            "container": {
+              "type": "container",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "ProductHierarchy"
+            },
+            "containerPropertyIdentifier": "parent",
+            "source": {
+              "type": "view",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "ProductHierarchy",
+              "version": "v1.0.0"
+            }
+          },
+          "root": {
+            "name": "Root",
+            "description": "An automatically updated reference to the top-level node of the product hierarchy.",
+            "container": {
+              "type": "container",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "ProductHierarchy"
+            },
+            "containerPropertyIdentifier": "root",
+            "source": {
+              "type": "view",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "ProductHierarchy",
+              "version": "v1.0.0"
+            }
+          },
+          "path": {
+            "name": "Path",
+            "description": "An automatically updated ordered list of this nodes ancestors, starting with the root node. Enables subtree filtering.",
+            "container": {
+              "type": "container",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "ProductHierarchy"
+            },
+            "containerPropertyIdentifier": "path",
+            "source": {
+              "type": "view",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "ProductHierarchy",
+              "version": "v1.0.0"
+            }
+          },
+          "pathLastUpdatedTime": {
+            "name": "Path last updated time",
+            "description": "The last time the hierarchy path was updated for this product hierarchy node.",
+            "container": {
+              "type": "container",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "ProductHierarchy"
+            },
+            "containerPropertyIdentifier": "pathLastUpdatedTime"
+          },
+          "declaredType": {
+            "name": "Declared Type",
+            "description": "Concrete view external id for this instance, for example ProductFamily or ProductGroup.",
+            "container": {
+              "type": "container",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "ProductHierarchy"
+            },
+            "containerPropertyIdentifier": "declaredType",
+            "source": {
+              "type": "view",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "DeclaredTypes",
+              "version": "v1.0.0"
+            }
+          },
+          "hierarchyCode": {
+            "name": "Hierarchy Code",
+            "description": "Short unique code identifying this node in the source ERP or classification system.",
+            "container": {
+              "type": "container",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "ProductHierarchy"
+            },
+            "containerPropertyIdentifier": "hierarchyCode"
+          },
+          "hierarchyDepth": {
+            "name": "Hierarchy Depth",
+            "description": "Zero-based numeric depth in the tree, 0 for root, 1, 2.",
+            "container": {
+              "type": "container",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "ProductHierarchy"
+            },
+            "containerPropertyIdentifier": "hierarchyDepth"
+          },
+          "productHierarchyCode": {
+            "name": "Product Hierarchy Code",
+            "description": "Full concatenated hierarchy code string for this node, all ancestor codes joined.",
+            "container": {
+              "type": "container",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "ProductHierarchy"
+            },
+            "containerPropertyIdentifier": "productHierarchyCode"
+          },
+          "productFamilyCode": {
+            "name": "Product Family Code",
+            "description": "Denormalised product family code inherited from the ancestor node at the ProductFamily level.",
+            "container": {
+              "type": "container",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "ProductHierarchy"
+            },
+            "containerPropertyIdentifier": "productFamilyCode"
+          },
+          "productGroupCode": {
+            "name": "Product Group Code",
+            "description": "Denormalised product group code inherited from the ancestor node at the ProductGroup level.",
+            "container": {
+              "type": "container",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "ProductHierarchy"
+            },
+            "containerPropertyIdentifier": "productGroupCode"
+          },
+          "productSubGroupCode": {
+            "name": "Product Sub-Group Code",
+            "description": "Denormalised product sub-group code inherited from the ancestor node at the ProductSubGroup level.",
+            "container": {
+              "type": "container",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "ProductHierarchy"
+            },
+            "containerPropertyIdentifier": "productSubGroupCode"
+          },
+          "businessHierarchy": {
+            "name": "Business Hierarchy",
+            "description": "Direct relation to the CostCenter node representing the organisational unit accountable for this product classification.",
+            "container": {
+              "type": "container",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "ProductHierarchy"
+            },
+            "containerPropertyIdentifier": "businessHierarchy",
+            "source": {
+              "type": "view",
+              "space": "sp_isc_solution",
+              "externalId": "CostCenter",
+              "version": "v1.0.0"
+            }
+          },
+          "materials": {
+            "name": "Materials",
+            "description": "Direct relations to the MaterialMaster nodes classified under this product hierarchy node.",
+            "container": {
+              "type": "container",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "ProductHierarchy"
+            },
+            "containerPropertyIdentifier": "materials",
+            "source": {
+              "type": "view",
+              "space": "sp_isc_material_management",
+              "externalId": "MaterialMaster",
+              "version": "v1.0.0"
+            }
+          },
+          "isActive": {
+            "name": "Is Active",
+            "description": "Whether this hierarchy node is currently active.",
+            "container": {
+              "type": "container",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "ProductHierarchy"
+            },
+            "containerPropertyIdentifier": "isActive"
+          },
+          "children": {
+            "connectionType": "multi_reverse_direct_relation",
+            "name": "Children",
+            "description": "Product hierarchy nodes with this node as their parent.",
+            "source": {
+              "type": "view",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "ProductHierarchy",
+              "version": "v1.0.0"
+            },
+            "through": {
+              "source": {
+                "type": "view",
+                "space": "sp_isc_organizational_foundation",
+                "externalId": "ProductHierarchy",
+                "version": "v1.0.0"
+              },
+              "identifier": "parent"
+            }
+          }
+        }
+      },
+      {
+        "space": "sp_isc_solution",
+        "externalId": "ProductFamily",
+        "version": "v1.0.0",
+        "name": "Product family",
+        "description": "Product family in the product classification hierarchy.",
+        "filter": {
+          "and": [
+            {
+              "hasData": [
+                {
+                  "type": "container",
+                  "space": "sp_isc_organizational_foundation",
+                  "externalId": "ProductHierarchy"
+                }
+              ]
+            },
+            {
+              "equals": {
+                "property": [
+                  "sp_isc_organizational_foundation",
+                  "ProductHierarchy",
+                  "declaredType"
+                ],
+                "value": {
+                  "space": "sp_isc_organizational_foundation",
+                  "externalId": "ProductFamily"
+                }
+              }
+            }
+          ]
+        },
+        "properties": {
+          "declaredType": {
+            "name": "Declared Type",
+            "description": "Concrete view type for this instance.",
+            "container": {
+              "type": "container",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "ProductHierarchy"
+            },
+            "containerPropertyIdentifier": "declaredType",
+            "source": {
+              "type": "view",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "DeclaredTypes",
+              "version": "v1.0.0"
+            }
+          },
+          "product_sector": {
+            "name": "ProductSector",
+            "description": "Parent ProductSector in the product hierarchy.",
+            "container": {
+              "type": "container",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "ProductHierarchy"
+            },
+            "containerPropertyIdentifier": "parent",
+            "source": {
+              "type": "view",
+              "space": "sp_isc_solution",
+              "externalId": "ProductSector",
+              "version": "v1.0.0"
+            }
+          },
+          "children": {
+            "connectionType": "multi_reverse_direct_relation",
+            "name": "Children",
+            "description": "Product hierarchy nodes with this node as their parent.",
+            "source": {
+              "type": "view",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "ProductHierarchy",
+              "version": "v1.0.0"
+            },
+            "through": {
+              "source": {
+                "type": "view",
+                "space": "sp_isc_organizational_foundation",
+                "externalId": "ProductHierarchy",
+                "version": "v1.0.0"
+              },
+              "identifier": "parent"
+            }
+          },
+          "productGroups": {
+            "connectionType": "multi_reverse_direct_relation",
+            "name": "Product Groups",
+            "description": "ProductGroup nodes under this ProductFamily.",
+            "source": {
+              "type": "view",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "ProductHierarchy",
+              "version": "v1.0.0"
+            },
+            "through": {
+              "source": {
+                "type": "container",
+                "space": "sp_isc_organizational_foundation",
+                "externalId": "ProductHierarchy"
+              },
+              "identifier": "parent"
+            }
+          }
+        }
+      },
+      {
+        "space": "sp_isc_solution",
+        "externalId": "ProductGroup",
+        "version": "v1.0.0",
+        "name": "Product group",
+        "description": "Product group in the product classification hierarchy.",
+        "filter": {
+          "and": [
+            {
+              "hasData": [
+                {
+                  "type": "container",
+                  "space": "sp_isc_organizational_foundation",
+                  "externalId": "ProductHierarchy"
+                }
+              ]
+            },
+            {
+              "equals": {
+                "property": [
+                  "sp_isc_organizational_foundation",
+                  "ProductHierarchy",
+                  "declaredType"
+                ],
+                "value": {
+                  "space": "sp_isc_organizational_foundation",
+                  "externalId": "ProductGroup"
+                }
+              }
+            }
+          ]
+        },
+        "properties": {
+          "declaredType": {
+            "name": "Declared Type",
+            "description": "Concrete view type for this instance.",
+            "container": {
+              "type": "container",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "ProductHierarchy"
+            },
+            "containerPropertyIdentifier": "declaredType",
+            "source": {
+              "type": "view",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "DeclaredTypes",
+              "version": "v1.0.0"
+            }
+          },
+          "product_family": {
+            "name": "ProductFamily",
+            "description": "Parent ProductFamily in the product hierarchy.",
+            "container": {
+              "type": "container",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "ProductHierarchy"
+            },
+            "containerPropertyIdentifier": "parent",
+            "source": {
+              "type": "view",
+              "space": "sp_isc_solution",
+              "externalId": "ProductFamily",
+              "version": "v1.0.0"
+            }
+          },
+          "children": {
+            "connectionType": "multi_reverse_direct_relation",
+            "name": "Children",
+            "description": "Product hierarchy nodes with this node as their parent.",
+            "source": {
+              "type": "view",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "ProductHierarchy",
+              "version": "v1.0.0"
+            },
+            "through": {
+              "source": {
+                "type": "view",
+                "space": "sp_isc_organizational_foundation",
+                "externalId": "ProductHierarchy",
+                "version": "v1.0.0"
+              },
+              "identifier": "parent"
+            }
+          },
+          "productSubgroups": {
+            "connectionType": "multi_reverse_direct_relation",
+            "name": "Product Subgroups",
+            "description": "ProductSubgroup nodes under this ProductGroup.",
+            "source": {
+              "type": "view",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "ProductHierarchy",
+              "version": "v1.0.0"
+            },
+            "through": {
+              "source": {
+                "type": "container",
+                "space": "sp_isc_organizational_foundation",
+                "externalId": "ProductHierarchy"
+              },
+              "identifier": "parent"
+            }
+          }
+        }
+      },
+      {
+        "space": "sp_isc_solution",
+        "externalId": "ProductSubgroup",
+        "version": "v1.0.0",
+        "name": "Product subgroup",
+        "description": "Product subgroup in the product classification hierarchy.",
+        "filter": {
+          "and": [
+            {
+              "hasData": [
+                {
+                  "type": "container",
+                  "space": "sp_isc_organizational_foundation",
+                  "externalId": "ProductHierarchy"
+                }
+              ]
+            },
+            {
+              "equals": {
+                "property": [
+                  "sp_isc_organizational_foundation",
+                  "ProductHierarchy",
+                  "declaredType"
+                ],
+                "value": {
+                  "space": "sp_isc_organizational_foundation",
+                  "externalId": "ProductSubgroup"
+                }
+              }
+            }
+          ]
+        },
+        "properties": {
+          "declaredType": {
+            "name": "Declared Type",
+            "description": "Concrete view type for this instance.",
+            "container": {
+              "type": "container",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "ProductHierarchy"
+            },
+            "containerPropertyIdentifier": "declaredType",
+            "source": {
+              "type": "view",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "DeclaredTypes",
+              "version": "v1.0.0"
+            }
+          },
+          "product_group": {
+            "name": "ProductGroup",
+            "description": "Parent ProductGroup in the product hierarchy.",
+            "container": {
+              "type": "container",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "ProductHierarchy"
+            },
+            "containerPropertyIdentifier": "parent",
+            "source": {
+              "type": "view",
+              "space": "sp_isc_solution",
+              "externalId": "ProductGroup",
+              "version": "v1.0.0"
+            }
+          },
+          "children": {
+            "connectionType": "multi_reverse_direct_relation",
+            "name": "Children",
+            "description": "Product hierarchy nodes with this node as their parent.",
+            "source": {
+              "type": "view",
+              "space": "sp_isc_organizational_foundation",
+              "externalId": "ProductHierarchy",
+              "version": "v1.0.0"
+            },
+            "through": {
+              "source": {
+                "type": "view",
+                "space": "sp_isc_organizational_foundation",
+                "externalId": "ProductHierarchy",
+                "version": "v1.0.0"
+              },
+              "identifier": "parent"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "errorMessage": "Request failed with status code 400: Cannot upsert view 'sp_isc_solution:ProductFamily/v1.0.0' because the source view 'sp_isc_solution:ProductSector/v1.0.0' does not exist. | X-Request-ID: d27d63d0-0a58-901b-9739-8215b5f9b6d5",
+  "statusCode": 400
+}

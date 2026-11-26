@@ -5,6 +5,10 @@ description: Organizational foundation domain — hierarchies interfaces, produc
 version: '{{dmVersion}}'
 views:
 - space: {{ isc_OrganizationalFoundationSchemaSpace }}
+  externalId: ProductHierarchy
+  version: '{{viewVersion}}'
+  type: view
+- space: {{ isc_OrganizationalFoundationSchemaSpace }}
   externalId: DeclaredTypes
   version: '{{viewVersion}}'
   type: view
